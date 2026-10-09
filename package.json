@@ -1,0 +1,26 @@
+{
+  "name": "moneycloud",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w @moneycloud/api",
+    "dev:web": "npm run dev -w @moneycloud/web",
+    "test": "npm run test -w @moneycloud/api",
+    "build": "npm run build -w @moneycloud/web"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@firebase/util": "^1.15.3",
+    "approve": "^0.0.12",
+    "scrips": "^1.2.0"
+  },
+  "allowScripts": {
+    "@firebase/util@1.15.3": true,
+    "esbuild@0.25.12": true,
+    "protobufjs@7.6.6": true
+  }
+}
